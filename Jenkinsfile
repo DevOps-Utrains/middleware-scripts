@@ -7,6 +7,12 @@ pipeline {
           
          sh'zip middlewasreScript${BUILD_NUMBER}.zip *  --exclude Jenkinsfile'
           
+        }
+      stage("build"){
+         steps {
+          
+         echo "build"
+          
         } 
       }          
     }
